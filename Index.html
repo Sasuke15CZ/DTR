@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="cs">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+    <meta name="generator" content="PSPad editor, www.pspad.com">
+    <title>Untitled</title>
+  </head>
+  
+  <body>
+  <!--V dnešní hodině si navrhneme a hlevně rozvrhneme webovou stránku.
+  Využijeme znalosti z tvorby tabulek, kdy vytvoříme přes celou stránku jednu
+  tabulku, která bude dále rozdělena na určité části. Použijeme tedy párový tag
+  "table" s různými atributy (důležitý je parametr pro šířku tabulky = stránky).-->
+  <table bgcolor="lightgreen" border="1" cellspacing="0" bordercolor="green" cellpading="0" width="1200" align="center">
+
+  <!--Do prvního řádku do buňky vložíme vlastní logo, které má právě konkrétní rozměry
+  (šířka a výška v pixelech) pomocí tagu "img" s různými atributy.-->
+  <tr heihgt="200">
+    <td colspan="2"> <img border="0" align="middle" src="obr/logo.png"> </td>
+  </tr>
+  <!--Druhý řádek bude rozdělen na dvě části. První část vlevo bude fungovat
+  jako přepínací menu mezi jednotlivými stránkami. Menu vytvoříme širkoé například
+  200px podle velikosti obrázku v logu. Dále stačí napsat nějaký nadpis "menu"
+  a pak budeme tvořit jednotlivé odkazy na stránky.
+  Poslední část bude obsahovat (odkazy na jednotlivé stránky). Do buňky vložíme
+  rámeček pomocí párového tagu "iframe" s odkazem na úvodní stránku. Nastavíme
+  atributy šířky (width) a výšky (height) podle velikosti buňky,
+  dále bezohraničení (frameborder). Důležité je pojmenovat daný rámeček (name),
+  protože se na něho odkazujeme pomocí atributu "target" v odkazech v menu. -->
+  <tr height="600">
+    <td width="200" align="center" valign="top"> <br><br>
+        <font size="5" face="Georgia"> <b>MENU</b></font> <br><br>
+        <font size="5" face="Georgia"> <a href="str/uvod.html" target="domu">Úvod</a</font> <br><br>
+        <font size="5" face="Georgia"> <a href="str/rastrovagrafika.html" target="domu">Rastrová grafika</a</font> <br><br>
+        <font size="5" face="Georgia"> <a href="str/vektorovagrafika.html" target="domu">Vektorová grafika</a</font> <br><br>
+        <font size="5" face="Georgia"> <a href="str/grafickeformaty.html" target="domu">Grafické formáty a editory</a</font> <br><br>        
+        </td>
+    <td width="1000">
+    <iframe src="str/uvod.html" name="domu" width="1000" height="600" frameborder="0">
+    </iframe>
+    </td>
+  </tr>
+  
+ </table>
+ 
+ 
+  </body>
+</html>
